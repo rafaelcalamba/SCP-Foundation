@@ -1,0 +1,22 @@
+<html><script language="JavaScript">
+var messages=new Array(6);
+messages[0]="";
+messages[1]="javascript is a cool scripting language";
+messages[2]="Can you imagine how you could use it on your site?";
+messages[3]="It's great for sharing lots of information.";
+messages[4]="And doesn't take up much space!";
+messages[5]="So, get the code and put it on your site!";
+function messageReveal()
+{
+var messageindex=document.messageForm.messagePick.selectedIndex
+document.messageForm.messageField.value=messages[messageindex];
+}
+</script><body><center><form name="messageForm">
+<p><select name="messagePick" OnChange="messageReveal()">
+<option>The Menu Message</option>
+<option>SONY CARD 20</option>
+<option>Possible uses?</option>
+<option>Shares Information</option>
+<option>Saves space</option>
+<option>Get the code!</option></select><br></p>
+<p><textarea name="messageField" rows="5" cols="41" wrap="virtual"></textarea></p></form></center></body></html>
