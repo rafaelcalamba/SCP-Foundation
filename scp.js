@@ -344,19 +344,19 @@ function ReadLine(input)
 {
 	if(input=="intro")
 	{
-		AccessPage("index.html#about");
+		AccessPage("content.html#about");
 	}
 	else if(input=="report")
 	{
-		AccessPage("index.html#reports");
+		AccessPage("content.html#reports");
 	}
 	else if(input=="log")
 	{
-		AccessPage("index.html#logs");
+		AccessPage("content.html#logs");
 	}
 	else if(input=="scp")
 	{
-		AccessPage("index.html#SCPs");
+		AccessPage("content.html#SCPs");
 	}
 	else if(input=="gallery")
 	{
@@ -368,7 +368,7 @@ function ReadLine(input)
 	}
 	else if(input=="index")
 	{
-		AccessPage("index.html");
+		AccessPage("content.html");
 	}
 	else if(input=="about")
 	{
@@ -443,14 +443,14 @@ function ReadLine(input)
 		document.getElementById("cli").value="";
 		document.getElementById("cli").style.display="none";
 		document.getElementById("clibutton").style.display="block";
-		AccessPage("index.html");
+		AccessPage("content.html");
 	}
 	else if(input=="detach")
 	{
 		document.getElementById("cli").value="";
 		document.getElementById("cli").style.display="none";
 		document.getElementById("clibutton").style.display="block";
-		AccessPage("index.html");
+		AccessPage("content.html");
 		open("cli.html","_blank");
 	}
 	else
