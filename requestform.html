@@ -1,0 +1,49 @@
+<html><head><title>
+SCP Foundation</title>
+<link rel="stylesheet" type="text/css" href=scp.css>
+<script src="scp.js"></script>
+<body bgcolor=black text=white>
+<table border=0 width=100% height=100%>
+<td align=center>
+<form name='requestaccess' action=splash.html  onsubmit="return ValidateRequestForm()">
+<table border=1 cellpadding=16 rules=none><td align=center>
+<font face='Courier New' size=2>
+<div class="error">
+<div style="display:none" id="blankfield"></div>
+<div style="display:none" id="numericfield"></div>
+<div style="display:none" id="invalidemail"></div>
+<div style="display:none" id="shortpassword"></div>
+<div style="display:none" id="passwordmismatch"></div>
+</div><b>
+<p>ALL FIELDS ARE REQUIRED</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+LAST NAME <input type=text name=lastname size=16 maxlength=32><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRST NAME <input type=text name=firstname size=16 maxlength=32><br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+MIDDLE NAME <input type=text name=middlename size=16 maxlength=32><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+DATE OF BIRTH <select size=1><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option></select>
+<select size=1><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select>
+<select size=1><option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option></select><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+GENDER <input type=radio name=gender checked=checked> </b>Male <input type=radio name=gender> Female<b><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+NATIONALITY <input type=text name=nationality size=16 maxlength=32><br><br>
+&nbsp;&nbsp;
+E-MAIL ADDRESS <input type=text name=email size=16 maxlength=32><br>
+&nbsp;&nbsp;&nbsp;
+MOBILE NUMBER <input type=text name=phonenumber size=16 maxlength=32><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+USERNAME <input type=text name=username size=16 maxlength=32><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PASSWORD <input type=password name=password size=16 maxlength=32><br>
+&nbsp;CONFIRM PASSWORD <input type=password name=confirmpassword size=16 maxlength=32><br><br>
+FACILITY ASSIGNED <select size=1><option>Area</option><option>Site</option></select>-<input type=text name=facilitynumber size=4 maxlength=4>
+&nbsp;&nbsp;&nbsp;<br><br>
+PERMISSION(S)
+<br><input type=checkbox name=permission checked disabled> Read <input type=checkbox name=permission disabled> Create <input type=checkbox name=permission disabled> Edit <input type=checkbox name=permission disabled> Delete<br><br>
+REASON FOR ACCESS<br>
+<textarea name=reason cols=32 rows=4></textarea><br><br>
+<input type=reset name=reset value=Reset>
+<input type=submit name=submit value=Submit></b></font></td></table></form></td></table></body></html>

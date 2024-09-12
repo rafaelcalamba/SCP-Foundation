@@ -1,0 +1,24 @@
+input
+{
+	font-family: Courier New;
+}
+select
+{
+	font-family: Courier New;
+}
+.error
+{
+	color: gray;
+}
+body.index
+{
+	background-image: url('SCP_Foundation_(emblem).png');
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.hidden
+{
+	color:gray;
+}

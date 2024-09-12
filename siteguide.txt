@@ -1,0 +1,135 @@
+reports - http://www.scp-wiki.net/incident-reports-eye-witness-interviews-and-personal-logs
+logs - http://www.scp-wiki.net/log-of-anomalous-items http://www.scp-wiki.net/log-of-extranormal-events http://www.scp-wiki.net/log-of-unexplained-locations
+scps - http://www.scp-wiki.net/top-rated-pages
+
+SCP-173 - The Sculpture - The Original
+SCP-087 - The Stairwell
+SCP-2521 - ●●|●●●●●|●●|●
+SCP-055 - [unknown]
+SCP-093 - Red Sea Object
+SCP-895 - Camera Disruption
+SCP-231 - Special Personnel Requirements
+
+SCP-CN-369 - Self-Declaration Rostrum
+SCP-008-FR - Wax Salamander
+SCP-025-FR - Deadly Silence
+SCP-103-FR - <i>"This is not a Mosasaurus"</i>
+SCP-185-FR - Kinetic Inverter
+SCP-197-FR - Gardener Tortoises
+SCP-198-FR - Considerations on the Causes of the Greatness of Mankind and its Decline
+SCP-ES-083 - deCipher'em All v1.6
+SCP-ES-089 - A Contagious Threat
+SCP-019-JP - A Common Bonobo
+SCP-100-JP - Attic Room Space
+SCP-161-JP - Eyling Inability
+SCP-240-JP - Zero Instances of Locust
+SCP-419-JP - An Alternate History of Easter Island
+SCP-830-JP - Downfall of One Night Castle
+SCP-018-DE - The Permit
+SCP-066-DE - The little Spellbook
+SCP-077-DE - The Black Widower
+
+scp-895 - <iframe src="http://scpfoundation.org/895/feed.html" frameborder="0" height="225px" width="300px"></iframe> http://www.scp-wiki.net/scp-895
+gallery - http://www.scp-wiki.net/top-rated-pages
+about - http://www.scp-wiki.net/about-the-scp-foundation http://www.scp-wiki.net/object-classes
+links - http://www.scp-wiki.net/ sidebar
+
+http://scp-foundation.deviantart.com/
+https://www.facebook.com/scpfoundation
+https://twitter.com/scpwiki
+http://www.reddit.com/r/SCP
+http://scp-wiki-official.tumblr.com/
+http://thescpfoundation.tumblr.com/
+
+additional links:
+http://www.scp-wiki.net/scp-ex
+http://www.scp-wiki.net/personnel-and-character-dossier
+http://www.scp-wiki.net/security-clearance-levels
+http://www.scp-wiki.net/secure-facilities-locations
+http://www.scp-wiki.net/task-forces
+
+fonts: courier new, consolas, lucida console
+
+en dash ename: &ndash;
+full block dec: &#9608;
+right single quote ename: &rsquo;
+ampersand ename: &amp;
+pounds ename: &pound;
+degree ename: &deg;
+degree celsius dec: &#8451;
+less than ename: &lt;
+greater than ename: &gt;
+horizontal ellipsis ename: &hellip;
+em dash ename: &mdash;
+black circle dec: &#9679;
+
+to-dos:
+scp-ints
+
+Slideshow
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.demo {cursor:pointer}
+</style>
+<body>
+
+<div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
+</div>
+
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_fjords_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img_nature_wide.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img_fjords_wide.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img_mountains_wide.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

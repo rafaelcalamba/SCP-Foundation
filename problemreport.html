@@ -1,0 +1,23 @@
+<html><head><title>
+SCP Foundation</title>
+<link rel="stylesheet" type="text/css" href=scp.css>
+<script src="scp.js"></script>
+</head>
+<body bgcolor=black text=white>
+<table border=0 width=100% height=100%>
+<td align=center>
+<form name='problemreport' action=index.html  onsubmit="return ValidateReportForm()">
+<table border=1 cellpadding=16 rules=none><td align=center>
+<font face='Courier New' size=2>
+<div class="error">
+<div style="display:none" id="blankfield"></div>
+<div style="display:none" id="invalidurl"></div>
+</div><b>
+<p>ALL FIELDS ARE REQUIRED</p>
+URL <input type=text name=url size=128 maxlength=128><br><br>
+PROBLEM <select size=1><option>Graphical</option><option>Technical</option><option>Informational</option><option>Anomalous</option></select><br><br>
+SEVERITY <select size=1><option>Low</option><option>Medium</option><option>High</option></select><br><br>
+DESCRIPTION<br>
+<textarea name=description cols=112 rows=4></textarea><br><br>
+<input type=reset name=reset value=Reset>
+<input type=submit name=submit value=Submit></b></font></td></table></form></td></table></body></html>
