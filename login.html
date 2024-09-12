@@ -1,0 +1,42 @@
+<html><head><style type="text/css">
+input{
+font-family: Courier New;
+}
+</style><script type="text/javascript">
+function ValidateLogin()
+{
+var username=document.login.username.value;
+var passwordLength=document.login.password.value.length;
+var valid=false;
+if(username=="")
+{
+document.getElementById("blankusername").innerHTML="&#9679; USERNAME FIELD REQUIRES INPUT";
+valid=false;
+}
+else
+{
+document.getElementById("blankusername").innerHTML="";
+valid=true;
+}
+if(passwordLength<8)
+{
+document.getElementById("shortpassword").innerHTML="&#9679; PASSWORD FIELD REQUIRES "+(8-passwordLength)+" MORE CHARACTERS";
+valid=false;
+}
+else
+{
+document.getElementById("shortpassword").innerHTML="";
+}
+return valid;
+}
+</script><title></title></head>
+<body bgcolor=black text=white link=gray vlink=gray>
+<form name='login' action=home.html onsubmit="return ValidateLogin()">
+<table border=1 cellpadding=16 rules=none><td align=center>
+<font face='Courier New' size=2><b>
+USERNAME <input type=text name=username size=16 maxlength=32><br>
+PASSWORD <input type=password name=password size=16 maxlength=32><br><br>
+<input type=submit value='CHECK CREDENTIALS'><br>
+<a href=requestform.html>REQUEST ACCESS</a></b><br><br>
+<span id="blankusername" style="color:gray"></span><br>
+<span id="shortpassword" style="color:gray"></span></font></td></table></form></td></table></body></html>
