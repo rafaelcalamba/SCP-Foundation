@@ -487,7 +487,7 @@ function Send(input,output)
 		line++;
 		if((input.value=="clear")||(line>48))
 		{
-			output.innerHTML="";
+			output.innerHTML="<p>WELCOME TO SCiPNET DIRECT ACCESS TERMINAL. PLEASE ENTER COMMAND</p>";
 			line=0;
 		}
 		else
