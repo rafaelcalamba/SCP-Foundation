@@ -342,6 +342,7 @@ function OpenCLI()
 var blank=0;
 function ReadLine(input)
 {
+	input=input.trim()
 	if(input=="intro")
 	{
 		AccessPage("content.html#about");
