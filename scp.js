@@ -1,6 +1,6 @@
 function Shutdown()
 {
-	document.body.style.backgroundColor = document.body.style.backgroundColor == "black" ? "white" : "black";
+	document.getElementById("terminal").style.backgroundColor = document.getElementById("terminal").style.backgroundColor == "black" ? "white" : "black";
 }
 function ValidateLogInForm(securitylevel)
 {
